@@ -13549,7 +13549,7 @@
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: new URLSearchParams(formData).toString(),
   })
-    .then(() => console.log("Form successfully submitted"))
+    .then(() =>   document.write('<div class="alert alert-success alert-dismissible fade show" role="alert">Successs!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>'))
     .catch((error) => alert(error));
 };
 
